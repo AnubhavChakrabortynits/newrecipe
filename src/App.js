@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { useState,useEffect } from 'react';
+import { useState} from 'react';
 import Popular from './components/Popular';
 
 
@@ -39,11 +39,11 @@ const handleClick=async()=>{
     <div className="App">
 <nav className="navbar navbar-dark bg-dark">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">
+    <span className="navbar-text">
       <img src="https://cdn-icons-png.flaticon.com/128/3075/3075977.png"  alt="" width="30" height="24" className="d-inline-block align-text-top"/>
       &nbsp;RecipeNinja
-    </a>
-  </div>
+    </span>
+  </div> 
 </nav>
 
 

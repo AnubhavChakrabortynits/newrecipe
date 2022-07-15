@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 
 export default function Popular(props) {
@@ -21,7 +21,7 @@ const modall=(id)=>{
           <div class="card p-0 mx-auto" style={{width:"100%",height:"100%"}}>
           <div className="imgwrap" style={{height:"170px"}} >
           
-    <img style={{width:"100%",height:"100%"}} src={item.recipe.image} alt="No image to show"/>
+    <img style={{width:"100%",height:"100%"}} src={item.recipe.image} alt="no" />
     </div>
     <div class="card-body" style={{textAlign:"left"}}>
       <p class="card-text  my-1"><strong>Recipe Name-{item.recipe.label}</strong></p>
@@ -49,11 +49,11 @@ return (
 
 
 <tr>
-<td scope="col">{ig.text}</td>
-<td scope="col">{ig.quantity}</td>
-<td scope="col">{ig.weight.toFixed(2)}&nbsp;grams</td>
-<td scope="col">{ig.measure}</td>
-<td scope="col">{ig.foodCategory}</td>
+<td >{ig.text}</td>
+<td >{ig.quantity}</td>
+<td>{ig.weight.toFixed(2)}&nbsp;grams</td>
+<td>{ig.measure}</td>
+<td>{ig.foodCategory}</td>
 </tr>
 
   
@@ -77,10 +77,10 @@ return (
    
       <tbody className='table-warning'>
       <tr>
-        <td scope="col">{item.recipe.calories.toFixed(2)}</td>
-        <td scope="col">{item.recipe.totalWeight.toFixed(2)}grams</td>
-        <td scope="col">{item.recipe.yield}</td>
-        <td scope="col">{item.recipe.totalTime} &nbsp;mins</td>
+        <td >{item.recipe.calories.toFixed(2)}</td>
+        <td>{item.recipe.totalWeight.toFixed(2)}grams</td>
+        <td >{item.recipe.yield}</td>
+        <td >{item.recipe.totalTime} &nbsp;mins</td>
         </tr>
       </tbody>
       
