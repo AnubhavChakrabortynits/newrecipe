@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(119, 114, 114,0.2);
+}
+*{
+  box-sizing: border-box;
+  padding: 0%;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#searchtext{
+  border: 0;
+  background-color:rgb(130, 122, 122,0.0)
+}
+#searchtext:focus{
+outline:none ;
+display: block;
+width:100% ;
+
+}
+.searchcont{
+
+  width:50vw;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  background-color:rgb(130, 122, 122,0.2);
+  box-shadow:1px 1px 1px black,-1px -1px 1px black ;
+  border-radius: 25px 25px;
+}
+.rcont{
+  max-width:23% ;
+  margin:2px ;
+}
+@media (max-width:500px){
+  .rcont{
+    max-width: 90%;
+  
+  }
+}
+
+::-webkit-scrollbar{
+  width:5px;
+  height:2px;
+}
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 1px grey;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background: black;
+}
+#dishtype,#cuisinetype,#mealtype{
+  height:40px ;
+  border-radius: 30px 30px;
+  font-weight: 700;
+  font-size: .97rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  background-color: black;
+  color:aliceblue;
+}
+.secsearch{
+  background-image: radial-gradient(grey,white);
+  box-shadow: 3px 3px 3px rgb(119, 114, 114),-3px -3px 3px 3px 3px,rgb(119, 114, 114);
+  
+}
+label{
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5rem;
+  text-shadow:2px 2px 3px white ;
+}
+.displaycont{
+  background-image: radial-gradient(rgb(116, 113, 113),white);
+}
+
+i{
+  cursor: pointer;
+  
+
+}
+::placeholder{
+  color:black;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
