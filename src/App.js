@@ -11,7 +11,7 @@ const [food,setFood]=useState()
 
 const handlecsearch=async(c,m,d)=>{
   
-  const data=await fetch(`https://api.edamam.com/search?q=${value}&from=0&to=100&dishType=${d}&mealType=${m}&cuisineType=${c}&app_id=c506cb45&app_key=785aa09ed1af4b122448dd6aff9f24b9`)
+  const data=await fetch(`https://api.edamam.com/search?q=${""}&from=0&to=100&dishType=${d}&mealType=${m}&cuisineType=${c}&app_id=c506cb45&app_key=785aa09ed1af4b122448dd6aff9f24b9`)
   const rdata=await data.json()
   setFood(rdata.hits);
  
