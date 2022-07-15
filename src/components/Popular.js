@@ -18,27 +18,27 @@ const modall=(id)=>{
         
         <div className="col-md-3 mx-auto rcont bg-warning my-3" style={{padding:"0px",boxShadow:"1px 1px 1px black,-1px 1px 2px black"}}>
           
-          <div class="card p-0 mx-auto" style={{width:"100%",height:"100%"}}>
+          <div className="card p-0 mx-auto" style={{width:"100%",height:"100%"}}>
           <div className="imgwrap" style={{height:"170px"}} >
           
     <img style={{width:"100%",height:"100%"}} src={item.recipe.image} alt="no" />
     </div>
-    <div class="card-body" style={{textAlign:"left"}}>
-      <p class="card-text  my-1"><strong>Recipe Name-{item.recipe.label}</strong></p>
-      <p class="card-text my-1"><strong>Cuisine Type-{item.recipe.cuisineType[0]}</strong></p>
-      <p class="card-text my-1"><strong>Meal Type-{item.recipe.mealType[0]}</strong></p>
+    <div className="card-body" style={{textAlign:"left"}}>
+      <p className="card-text  my-1"><strong>Recipe Name-{item.recipe.label}</strong></p>
+      <p className="card-text my-1"><strong>Cuisine Type-{item.recipe.cuisineType[0]}</strong></p>
+      <p className="card-text my-1"><strong>Meal Type-{item.recipe.mealType[0]}</strong></p>
     </div>
     
     <dialog id={`${i}`} style={{width:"50rem"}}>
     <div className="container-fluid table-responsive" style={{width:"100%"}} >
     <h3><strong style={{textAlign:"centre",fontWeight:"bolder",fontFamily:"cursive"}}>{item.recipe.label}</strong></h3>
-    <table class="table table-striped table-dark mt-3" style={{width:"100%"}}>
+    <table className="table table-striped table-dark mt-3" style={{width:"100%"}}>
     <thead>
     <tr>
     <th scope="col">Ingredient</th>
     <th scope='col'>Quantity</th>
     <th scope='col'>Weight</th>
-    <th scope='col'>Measure</th>
+    <th scope='col'>Measure</th> 
     <th scope='col'>Ingredient Category</th>
     </tr>
     </thead>
