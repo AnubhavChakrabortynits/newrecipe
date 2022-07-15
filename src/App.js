@@ -60,7 +60,7 @@ const handleClick=async()=>{
  </div>
 </div>
 <div className="row my-2 secsearch">
-<div className="mx-auto col-sm-3 my-2">
+<div className="mx-auto col-md-3 my-2">
   <label htmlFor="mealtype">Meal:</label><select id="mealtype">
   
     <option value={"Breakfast"}>Breakfast</option>
@@ -70,7 +70,7 @@ const handleClick=async()=>{
     <option value="Teatime">Teatime</option>
   </select>
 </div>
-<div className="mx-auto col-sm-3 my-2">
+<div className="mx-auto col-md-3 my-2">
 <label htmlFor="dishtype">Dish:</label><select id="dishtype" >
     <option value="alcohol cocktail">Alcohol Cocktail</option>
     <option value="biscuits and cookies">Biscuit and Cookies</option>
@@ -96,7 +96,7 @@ const handleClick=async()=>{
 </div>
 
 
-<div className="mx-auto col-sm-3 my-2">
+<div className="mx-auto col-md-3 my-2">
 <label htmlFor="cuisinetype">Cuisine:</label><select id="cuisinetype">
 
     <option value={"american"}>American</option>

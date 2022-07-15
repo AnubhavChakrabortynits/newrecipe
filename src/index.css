@@ -94,3 +94,7 @@ i{
   font-size: 1.2rem;
   font-family: 'Times New Roman', Times, serif;
 }
+
+.table{
+  max-width:100vw ;
+}
