@@ -1,3 +1,11 @@
+This a recipe search app made using react and edamam recipe api where people can search for various recipes and see their ingredients and cooking time.Also 
+a link to the complete recipe page is also there.Users can search by category as well such as american,mexican and dinner,lunch snacks etc and so on:
+
+link :
+
+https://anubhavchakrabortynits.github.io/newrecipe/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
