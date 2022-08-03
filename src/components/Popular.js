@@ -12,8 +12,14 @@ const modall=(id)=>{
   return (
     <div className='container displaycont'>
       <div className="row">
-     
+
+      <div style={{display:"flex",justifyContent:"center",fontSize:"3rem",fontWeight:"900",textShadow:"1px 1px 1px white"}}>
+     {
+     props?.food?.length===0?"No results":""
+     }
+     </div>
       {props?.food?.map((item,i)=>{
+    
         return ("nodata" && 
         
         <div className="col-md-3 mx-auto rcont bg-warning my-3" style={{padding:"0px",boxShadow:"1px 1px 1px black,-1px 1px 2px black"}}>

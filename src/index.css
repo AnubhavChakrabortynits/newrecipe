@@ -95,3 +95,18 @@ i{
   font-family: 'Times New Roman', Times, serif;
 }
 
+.fix{
+  display:flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media  (max-width:768px) {
+  .fix{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}

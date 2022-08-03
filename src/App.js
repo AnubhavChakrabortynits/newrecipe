@@ -26,6 +26,7 @@ const handleClick=async()=>{
   console.log(value)
   const data=await fetch(`https://api.edamam.com/search?q=${value}&from=0&to=100&app_id=c506cb45&app_key=785aa09ed1af4b122448dd6aff9f24b9`)
     const rdata=await data.json()
+    
     setFood(rdata.hits);
   
     console.log(rdata.hits)
@@ -60,10 +61,10 @@ const handleClick=async()=>{
  </div>
 </div>
 <div className="row my-2 secsearch">
-<div className="mx-auto col-md-3 my-2">
+<div className="mx-auto col-md-3 my-2 fix">
   <label htmlFor="mealtype">Meal:</label><select id="mealtype">
   
-    <option value={"Breakfast"}>Breakfast</option>
+    <option value="Breakfast">Breakfast</option>
     <option value="Lunch">Lunch</option>
     <option value="Dinner">Dinner</option>
     <option value="Snack">Snack</option>
