@@ -13,7 +13,13 @@ const modall=(id)=>{
     <div className='container displaycont'>
       <div className="row">
 
+      {props.load==="t"?<div class="spinner-border" role="status" style={{margin:"auto"}}>
+  <span class="visually-hidden">Loading...</span>
+</div>:"" }
+
+
       <div style={{display:"flex",justifyContent:"center",fontSize:"3rem",fontWeight:"900",textShadow:"1px 1px 1px white"}}>
+     
      {
      props?.food?.length===0?"No results":""
      }

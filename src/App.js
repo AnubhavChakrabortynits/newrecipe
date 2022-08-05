@@ -7,14 +7,15 @@ import Popular from './components/Popular';
 function App() {
 const [value,setValue]=useState("");
 const [food,setFood]=useState()
+const [loader,setLoader]=useState("f")
 
 
 const handlecsearch=async(c,m,d)=>{
-  
+  setLoader("t")
   const data=await fetch(`https://api.edamam.com/search?q=${""}&from=0&to=100&dishType=${d}&mealType=${m}&cuisineType=${c}&app_id=c506cb45&app_key=785aa09ed1af4b122448dd6aff9f24b9`)
   const rdata=await data.json()
   setFood(rdata.hits);
- 
+ setLoader("f")
   console.log(rdata.hits)
 
 }
@@ -71,7 +72,7 @@ const handleClick=async()=>{
     <option value="Teatime">Teatime</option>
   </select>
 </div>
-<div className="mx-auto col-md-3 my-2">
+<div className="mx-auto col-md-3 my-2 fix">
 <label htmlFor="dishtype">Dish:</label><select id="dishtype" >
     <option value="alcohol cocktail">Alcohol Cocktail</option>
     <option value="biscuits and cookies">Biscuit and Cookies</option>
@@ -97,7 +98,7 @@ const handleClick=async()=>{
 </div>
 
 
-<div className="mx-auto col-md-3 my-2">
+<div className="mx-auto col-md-3 my-2 fix">
 <label htmlFor="cuisinetype">Cuisine:</label><select id="cuisinetype">
 
     <option value={"american"}>American</option>
@@ -137,7 +138,7 @@ const handleClick=async()=>{
  
       </div>
 
-<Popular food={food}/>
+<Popular food={food} load={loader} />
     </div>
   );
 }
